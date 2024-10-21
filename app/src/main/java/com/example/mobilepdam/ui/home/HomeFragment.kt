@@ -1,5 +1,6 @@
 package com.example.mobilepdam.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.mobilepdam.PaymentActivity
 import com.example.mobilepdam.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -27,6 +29,16 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // Set click listener for the LinearLayout (ll_tagihan)
+        binding.llTagihan.setOnClickListener {
+            val intent = Intent(requireActivity(), PaymentActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {
