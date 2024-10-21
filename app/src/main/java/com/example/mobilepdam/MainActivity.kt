@@ -34,14 +34,14 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-//        // Temukan LinearLayout berdasarkan ID
-//        val llTagihan: LinearLayout = findViewById(R.id.ll_tagihan)
-//
-//        // Set listener untuk menangani klik
-//        llTagihan.setOnClickListener {
-//            // Buat Intent untuk PaymentActivity
-//            val intent = Intent(this, PaymentActivity::class.java)
-//            startActivity(intent)
-//        }
+        // Temukan LinearLayout berdasarkan ID
+        val llTagihan: LinearLayout = findViewById(R.id.ll_tagihan)
+
+        // Set listener untuk menangani klik
+        llTagihan.setOnClickListener {
+            // Buat Intent untuk PaymentActivity
+            val intent = Intent(this, PaymentActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

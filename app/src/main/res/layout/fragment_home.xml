@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@color/light_blue"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
                 <LinearLayout
                     android:id="@+id/ll_tagihan"
                     android:layout_width="0dp"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical"
@@ -63,13 +63,13 @@
                     <!--                ll buat naroh gambar-->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="90dp"
+                        android:layout_height="100dp"
                         android:background="@drawable/rounded_shape"
                         android:elevation="2dp">
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="-1dp"
                             android:layout_marginBottom="10dp"
                             android:contentDescription="@string/content_tagihan"
@@ -83,9 +83,10 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="9dp"
                         android:text="@string/content_tagihan"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -93,7 +94,7 @@
                 <LinearLayout
                     android:id="@+id/ll_infopakai"
                     android:layout_width="0dp"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical"
@@ -104,13 +105,13 @@
                     <!--                ll buat naroh gambar-->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="90dp"
+                        android:layout_height="100dp"
                         android:background="@drawable/rounded_shape"
                         android:elevation="2dp">
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="-1dp"
                             android:layout_marginBottom="10dp"
                             android:contentDescription="@string/content_tagihan"
@@ -124,9 +125,10 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="9dp"
                         android:text="@string/content_infopakai"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -134,7 +136,7 @@
                 <LinearLayout
                     android:id="@+id/ll_lapormeteran"
                     android:layout_width="0dp"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical"
@@ -145,13 +147,13 @@
                     <!--                ll buat naroh gambar-->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="90dp"
+                        android:layout_height="100dp"
                         android:background="@drawable/rounded_shape"
                         android:elevation="2dp">
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="-1dp"
                             android:layout_marginBottom="10dp"
                             android:contentDescription="@string/content_tagihan"
@@ -165,9 +167,10 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="9dp"
                         android:text="@string/content_lapormeteran"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -183,7 +186,7 @@
                 <LinearLayout
                     android:id="@+id/ll_pengaduan"
                     android:layout_width="0dp"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical"
@@ -194,13 +197,13 @@
                     <!--                ll buat naroh gambar-->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="90dp"
+                        android:layout_height="100dp"
                         android:background="@drawable/rounded_shape"
                         android:elevation="2dp">
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="-1dp"
                             android:layout_marginBottom="10dp"
                             android:contentDescription="@string/content_pengaduan"
@@ -214,9 +217,10 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="9dp"
                         android:text="@string/content_pengaduan"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -224,7 +228,7 @@
                 <LinearLayout
                     android:id="@+id/ll_pasangbaru"
                     android:layout_width="0dp"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical"
@@ -235,13 +239,13 @@
                     <!--                ll buat naroh gambar-->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="90dp"
+                        android:layout_height="100dp"
                         android:background="@drawable/rounded_shape"
                         android:elevation="2dp">
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="-1dp"
                             android:layout_marginBottom="10dp"
                             android:contentDescription="@string/content_pasangbaru"
@@ -255,9 +259,10 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="9dp"
                         android:text="@string/content_pasangbaru"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
@@ -265,7 +270,7 @@
                 <LinearLayout
                     android:id="@+id/ll_pembayaran"
                     android:layout_width="0dp"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical"
@@ -276,13 +281,13 @@
                     <!--                ll buat naroh gambar-->
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="90dp"
+                        android:layout_height="100dp"
                         android:background="@drawable/rounded_shape"
                         android:elevation="2dp">
 
                         <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="90dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="-1dp"
                             android:layout_marginBottom="10dp"
                             android:contentDescription="@string/content_pembayaran"
@@ -296,9 +301,10 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="9dp"
                         android:text="@string/content_pembayaran"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
