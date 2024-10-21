@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#f5f5f5">
+
+    <!-- Card Background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:background="@drawable/card_background"
+        android:layout_marginBottom="24dp"
+        android:gravity="center">
+
+        <!-- User Image (Round) -->
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_user_background"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:clipToOutline="true"
+            android:background="@drawable/circle_background" />
+
+        <!-- Nama User -->
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama User"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Email User -->
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@example.com"
+            android:textSize="16sp"
+            android:textColor="#666"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Nomor Handphone User -->
+        <TextView
+            android:id="@+id/userPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+62 812 3456 7890"
+            android:textSize="16sp"
+            android:textColor="#666"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Alamat User -->
+        <TextView
+            android:id="@+id/userAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat User"
+            android:textSize="16sp"
+            android:textColor="#666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Additional Text Area -->
+        <EditText
+            android:id="@+id/additionalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Additional Information"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text" />
+    </LinearLayout>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="#FFF"
+        android:backgroundTint="#FF0000" />
+
+</LinearLayout>

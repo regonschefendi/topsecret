@@ -10,6 +10,4 @@
     <string name="content_pengaduan">Pengaduan</string>
     <string name="content_pasangbaru">Pasang Baru</string>
     <string name="content_pembayaran">Pembayaran</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
