@@ -1,9 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.notifications.NotificationsFragment">
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- FAQ Item 1 -->
+        <TextView
+            android:id="@+id/faqQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is Java?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/faqAnswer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java is a high-level programming language developed by Sun Microsystems. It is widely used for building enterprise-scale applications."
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <!-- FAQ Item 2 -->
+        <TextView
+            android:id="@+id/faqQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How do I create a new Android project?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/faqAnswer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To create a new Android project, open Android Studio, click on 'New Project,' choose a project template, configure the project settings, and click 'Finish.'"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <!-- FAQ Item 3 -->
+        <TextView
+            android:id="@+id/faqQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is an Activity in Android?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/faqAnswer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="An Activity is a single, focused thing that a user can do in an Android application. It represents a screen with a user interface."
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <!-- FAQ Item 4 -->
+        <TextView
+            android:id="@+id/faqQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How do I debug an Android application?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/faqAnswer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can debug an Android application using Android Studio's built-in debugger. Set breakpoints in your code and run the app in debug mode to step through the code."
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <!-- FAQ Item 5 -->
+        <TextView
+            android:id="@+id/faqQuestion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is a Fragment?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/faqAnswer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Fragment is a reusable portion of your app's user interface. It represents a behavior or a part of the user interface in an Activity."
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+    </LinearLayout>
+</ScrollView>
