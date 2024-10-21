@@ -338,6 +338,8 @@
         android:id="@+id/metode_tambahan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
         android:layout_marginTop="15dp"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -375,23 +377,24 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/text_saldo_3"
+                android:id="@+id/text_saldo_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Visa, Mastercard, Amex..."
+                android:text="Visa, Mastercard, Amex, JCP"
                 android:textSize="15sp" />
 
         </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/light_blue"
+            android:layout_height="44dp"
             android:textColor="@color/white"
             android:text="Tambah"
+            android:background="@drawable/button_radius"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="2dp"
+            android:textSize="13sp"
             app:layout_constraintHorizontal_bias="0.877"
             app:layout_constraintStart_toEndOf="@+id/linearLayout5"
             app:layout_constraintTop_toTopOf="parent" />
