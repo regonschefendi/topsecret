@@ -22,7 +22,7 @@ class AccountFragment : Fragment() {
         _binding = FragmentAccountBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        return root
+        return binding.root
     }
 
     override fun onDestroyView() {
