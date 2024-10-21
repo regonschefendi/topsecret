@@ -1,6 +1,8 @@
 package com.example.mobilepdam
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.LinearLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -31,5 +33,15 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        // Temukan LinearLayout berdasarkan ID
+        val llTagihan: LinearLayout = findViewById(R.id.ll_tagihan)
+
+        // Set listener untuk menangani klik
+        llTagihan.setOnClickListener {
+            // Buat Intent untuk PaymentActivity
+            val intent = Intent(this, PaymentActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

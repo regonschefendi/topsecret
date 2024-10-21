@@ -8,42 +8,42 @@
     android:background="@color/bgapp"
     tools:context=".PaymentActivity">
 
-    <!-- AppBar -->
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/light_blue"
-        android:elevation="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+<!--    &lt;!&ndash; AppBar &ndash;&gt;-->
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/app_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:background="@color/light_blue"-->
+<!--        android:elevation="0dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
 
-        <!-- Constraint Layout to hold both text and icon -->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="15dp">
+<!--        &lt;!&ndash; Constraint Layout to hold both text and icon &ndash;&gt;-->
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="15dp">-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="6dp"
-                android:text="Metode Pembayaran"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.005"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="6dp"-->
+<!--                android:text="Metode Pembayaran"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.005"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="1.0" />-->
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-    </com.google.android.material.appbar.AppBarLayout>
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
 
 
 
@@ -61,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--    metode 1-->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -334,13 +334,15 @@
         app:layout_constraintTop_toBottomOf="@+id/metode_4" />
 
     <!--    metode tambahan-->
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/metode_tambahan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:background="@color/white"
         android:elevation="4dp"
-        android:layout_marginTop="15dp"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -388,18 +390,33 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="44dp"
-            android:textColor="#FFF"
             android:backgroundTint="@color/buttonijo"
+            android:elevation="2dp"
             android:text="Tambah"
+            android:textColor="#FFF"
+            android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:elevation="2dp"
-            android:textSize="13sp"
             app:layout_constraintHorizontal_bias="0.877"
             app:layout_constraintStart_toEndOf="@+id/linearLayout5"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/buttonijo"
+        android:elevation="4dp"
+        android:text="Konfirmasi Pembayaran"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/metode_tambahan"
+        app:layout_constraintVertical_bias="0.922" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
